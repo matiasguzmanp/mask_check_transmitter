@@ -164,16 +164,16 @@ void loop() {
         pCharacteristic2->notify();
 
         pCharacteristic3->setValue(pre_send);
-        pCharacteristic2->notify();
+        pCharacteristic3->notify();
        
         Serial.print("Temperature: ");
-        Serial.print(temp);
+        Serial.print(temp_send);
         Serial.print(" *C");
         Serial.print(" Humidity: ");
-        Serial.print(hum);
+        Serial.print(hum_send);
         Serial.print(" %");
         Serial.print(" Pressure: ");
-        Serial.print(pre);
+        Serial.print(pre_send);
         Serial.println(" hPa");
         
 
